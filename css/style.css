@@ -2860,6 +2860,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .get-started__box-img {
+    width: 100%;
+    text-align: center;
     position: relative;
     top: 0;
     left: 0;
@@ -2910,13 +2912,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 43.75em) {
+  .get-started__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 34.0625em) {
   .get-started__body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     gap: 1.25rem;
     border-radius: 1.875rem;
   }
